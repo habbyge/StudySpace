@@ -12,15 +12,15 @@ http://naotu.baidu.com/file/82fda7a3ad479fbff45908c463fdcd62?token=8ecbfaab1cc83
 
 
 ## 学习资源：
-###1【在线学习】
+### 在线学习
 极客帮
 百度网盘资源
 
-###2【纸质书 / 电子书 】
+### 纸质书 / 电子书 
 free-programming-books-zh_CN
 http://www.xz577.com
 
-###3 【他人积累】
+### 他人积累
 Android复习资料汇总
 https://juejin.im/post/5d48e9c36fb9a06af13d50f9
 
@@ -30,8 +30,8 @@ Github 开源
 
 ## 知识体系
 
-###【L、外语】
-####1【英语】
+### 【L、外语】
+#### 【英语】
 1 听说
 https://pan.baidu.com/s/1arevLmUzXiuxP71r9MX2Vw
 
@@ -49,7 +49,7 @@ https://pan.baidu.com/s/1arevLmUzXiuxP71r9MX2Vw
 《床头灯英语学习读本 I 简·爱》
 《Thinking ， Fast and Slow》
 
-####2【日语】
+#### 【日语】
 1 词句语法
 《新东方·日语语法新思维（初级）》
 《新东方·日语语法新思维（中高级）》
@@ -65,14 +65,9 @@ https://pan.baidu.com/s/1arevLmUzXiuxP71r9MX2Vw
 《知日系列套装 (套装10本)》
 
 
-####3 【韩语】 
- 公开课
+### 【F、移动大前端跨平台】
 
-###【F、移动大前端跨平台】
-
- ####1【 跨平台开发技术】
-
-
+ #### 【 跨平台开发技术】
 
 *大前端知识体系
   【前端自学路线】  https://www.cnblogs.com/qianguyihao/p/8776837.html 
@@ -115,14 +110,14 @@ WebViewJavascriptBridge
 https://uniapp.dcloud.io/
 
 
-####2【 kotlin 】
+#### 【 kotlin 】
 极客帮：
 https://time.geekbang.org/course/intro/105
 
      《Kotlin从零到精通Android开发》
 
 
-####3 【C/C++/NDK】
+#### 【C/C++/NDK】
 
 * C 技术
 《C primer plus （第6版）》
@@ -177,7 +172,7 @@ https://developer.android.com/ndk
 * Python与机器学习
 安卓高级NDK资料包
 
-##  【M、主方向 - Android 架构】
+## 【M、主方向 - Android 架构】
 
 
 【学习资源】
@@ -185,19 +180,19 @@ https://developer.android.com/ndk
 https://juejin.im/user/578259398ac2470061f3a3fb
 
 
-###1 架构师发展方向（架构重构与设计思想） 
+###  架构师发展方向（架构重构与设计思想） 
 《 重构，改善既有代码的设计》
 《clean code》
 《十大开源库-- 视频课》
 《 Android源码与设计模式》
 
-####1  面向对象设计思想 --  UML 与设计模式
+####  面向对象设计思想 --  UML 与设计模式
 * UML 面向对象设计
 《Thinking  in  UML》
   UML及starUML工具
 https://juejin.im/post/5d2e048cf265da1b9163c7c8
 
-####2 设计模式
+#### 设计模式
   《设计模式之禅》
   《大话设计模式》
   《Head First设计模式》
@@ -207,7 +202,7 @@ https://juejin.im/post/5d2e048cf265da1b9163c7c8
 https://blog.csdn.net/xingjiarong/article/details/50066133
 
 
-####3 主流框架设计思想
+#### 主流框架设计思想
 *** 【主流框架】异步任务 -- RxJava / RxAndroid 框架学习 /RxBus
 http://mp.weixin.qq.com/s?__biz=MzIwMzYwMTk1NA==&mid=2247489050&idx=1&sn=4b9edc057cc6913dae1580e24d911e37&chksm=96cdb757a1ba3e41ee902bb12ee437ab3d93b64a5fefe030c5aa82184a6ebc63ec669178d6a1&mpshare=1&scene=23&srcid=0102Tu33NEz2xONdd4UzF1pC#rd
 https://juejin.im/book/5a09997cf265da432002bf6a
@@ -284,7 +279,7 @@ WorkManager
 ...
 
 
-####3  主流架构
+####  主流架构
  架构MVP、MVVM、jetpack
 1）MVVM + Jetpack
 * kotlin+MVVM+databinding+AOP+dagger2+RxJava+Retrofit
@@ -296,7 +291,7 @@ PaoNet
 WanmeiHelper
 ArmsComponent
 
-####4 组件化架构 -- ARouter、CC、AppJoint
+#### 组件化架构 -- ARouter、CC、AppJoint
 《Android组件化架构 》
 · https://pan.baidu.com/s/1pAVgIbSje74oQ14xb_zBMg
 
@@ -319,7 +314,7 @@ https://tech.meituan.com/meituan_waimai_android_open_source_routing_framework.ht
 
 
 
-###2 Android 技术专题与系统源码
+### Android 技术专题与系统源码
 《Android开发艺术探索》
 《深入理解android 卷一.pdf》  
 《深入理解android 卷三.pdf》
@@ -507,9 +502,9 @@ https://mp.weixin.qq.com/s/-WceVvEKp8bKtIJQsD3Srw
 
 
 
-###3 高级技术 - Android虚拟机、插件化
+### 高级技术 - Android虚拟机、插件化
 
-####1 Java/Android虚拟机原理
+#### Java/Android虚拟机原理
 【极客帮】深入拆解Java虚拟机：
   https://time.geekbang.org/column/intro/108
 【并发编程网】
@@ -539,20 +534,20 @@ https://www.jianshu.com/p/97bfe485e179
 https://www.jianshu.com/p/286d2b372334
 
 
-####3  插件化原理：
-《Android插件化开发指南》
+####  插件化原理
+《Android插件化开发指南》- 包建强
 插件化发展概述：
-https://blog.csdn.net/mantianku/article/details/80561033
+    https://blog.csdn.net/mantianku/article/details/80561033
 手机京东技术演进启示：
-https://blog.csdn.net/xinzhou201/article/details/80881604
+    https://blog.csdn.net/xinzhou201/article/details/80881604
 
-hook技术
-ClassLoader核心原理
-Dex文件结构及加载原理
-hook一个无需注册的Activity实战
-hook一个主题，实现资源的远程加载实战
+* hook技术
+  ClassLoader核心原理
+  Dex文件结构及加载原理
+  hook一个无需注册的Activity实战
+  hook一个主题，实现资源的远程加载实战
 
-@target theme主题换肤框架手写实践
+ 【实践】 theme主题换肤框架手写实践
 
 * Xposed详解
 http://blog.csdn.net/Innost/article/details/50461783?utm_source=gank.io%2Fxiandu&utm_medium=website
@@ -570,19 +565,19 @@ https://juejin.im/entry/5c7734bbf265da2da53ede61
 SDK 热更新方案
 https://juejin.im/post/5d299aaae51d45105e021367
 
-插件化框架
-* 官方的动态化框架 Android App Bundles
+* 插件化框架
+1） 官方的动态化框架 Android App Bundles
 
-* atlas 
+2） atlas 
 https://mp.weixin.qq.com/s?__biz=MzAxNDEwNjk5OQ==&mid=2650400348&idx=1&sn=99bc1bce932c5b9000d5b54afa2de70e
 https://blog.csdn.net/xiangzhihong8/article/details/80275201
 
-* Shadow
+3） Shadow
 
 
 
 
-##B、基础知识】
+## 【B、基础知识】
 ###  Java 技术栈 -- JDK
 《Java程序性能优化》、
 《java 并发艺术》、
@@ -594,7 +589,7 @@ https://pan.baidu.com/s/1fgg3EvwagSDIbsFTA8RTGw
 《Java语言程序设计-进阶篇（原书第10版）》
 
 * 并发编程
-【并发编程网】java 并发编程学习指导
+并发编程网 -- java 并发编程学习指导
 http://ifeve.com/java-concureent/
 Java并发编程的总结与思考
 《Java多线程并发编程核心技术》
@@ -616,19 +611,18 @@ Java 中的锁
 
 
 
-#### 射、动态代理
-
+#### 反射、动态代理
 Java反射机制原理 -- http://www.importnew.com/23902.html
 https://mp.weixin.qq.com/s/fXEYulgiTNgun0pJswRhXA
 动态代理 -- https://www.cnblogs.com/JackSparrow-/p/10665928.html
 
-####Java 容器类与实现原理
+#### Java 容器类与实现原理
 ArrayList 、LinkedList
 HashMap
 LinkedHashMap
 ConcurrentHashMap的锁的实现
 
-####JDK 7,8,9,10 版本特性
+#### JDK 7,8,9,10 版本特性
 《Java 8实战》
 
 Java 个版本特性与变化
@@ -657,7 +651,7 @@ http://www.xz577.com/j/33988.html
 #### 加密与解密
 《Java加密与解密的艺术-梁栋》
 
-###2 网络协议、操作系统、计算机组成原理
+### 网络协议、操作系统、计算机组成原理
 
 
 #### 计算机组成原理 
@@ -679,16 +673,14 @@ HTTP协议详解（真的很经典） - Hundre - 博客园 - 									http://www
 
 
 
-###3 数理逻辑、数据结构、算法 
-基础入门书籍
+### 数理逻辑、数据结构、算法 
 《啊哈！算法》
 《王晓华-算法的乐趣》
 《数据结构与算法分析》Java\C版
 
-算法课程
-百盘云盘
-《玩转数据结构 从入门到进阶》
-《玩转算法面试 leetcode》
+算法课程 （百盘云盘）
+  《玩转数据结构 从入门到进阶》
+  《玩转算法面试 leetcode》
 慕课网
 https://coding.imooc.com/class/chapter/71.html#Anchor
 
@@ -698,13 +690,9 @@ https://www.nowcoder.com
 
 
 
+## 【P、项目实践】
 
-
-
-
-##【P、项目实践】
-
-###1 Gradle工具
+### Gradle工具
 https://juejin.im/post/5a69c0ccf265da3e2a0dc9aa
 
 * Gradle 打包插件
@@ -730,7 +718,7 @@ gradle 插件如何hook打包过程，从而实现功能，如减少apk大小，
 
 
 
-###2 项目应用实践 -- 问题&方案
+### 项目应用实践 -- 问题&方案
 https://www.cnblogs.com/soaringEveryday/p/4835839.html
 
 * 工作项目问题总结
@@ -750,7 +738,7 @@ Android Q的适配
 2、点图标。应用重新启动问题
 
 
-###3 非功能相关 -- 稳定性、性能、问题排查、代码优化
+### 非功能相关 -- 稳定性、性能、问题排查、代码优化
 《Android移动性能实战》
 《Android应用性能优化最佳实践》
 《性能之巅》
