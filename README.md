@@ -138,7 +138,6 @@ c++的特性，什么是多态stl；
      	     C++指针和引用的区别
 
 * JNI & NDK 开发
-http://kms.sys.wanmei.net/pages/viewpage.action?pageId=29239649
  	官方文档 -- 向项目添加C/c++代码            
  https://developer.android.com/studio/projects/add-native-code?utm_source=android-studio 
 https://my.oschina.net/caipeng/blog/2243613
@@ -802,9 +801,6 @@ Stecho
 Fiddle2
 TcpDump + WireShark
 https://mozillazg.com/2015/05/open-tcpdump-result-with-wireshark-gui.html
-
-http://kms.sys.wanmei.net/pages/viewpage.action?pageId=42087916
-基于Hugo二次开发的一款方法耗时检测插件，可简单集成、不侵入源码地实现对项目中所有java方法的耗时检测
 
 
 
