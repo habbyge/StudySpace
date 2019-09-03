@@ -578,27 +578,20 @@ https://blog.csdn.net/xiangzhihong8/article/details/80275201
 
 ## 【B、基础知识】
 ###  Java 技术栈 -- JDK
-《Java程序性能优化》、
-《java 并发艺术》、
-《Effective Java》
-  百度云盘
-https://pan.baidu.com/s/1fgg3EvwagSDIbsFTA8RTGw
-《Java编程思想(第4版)》
-《Java语言程序设计-基础篇（原书第10版）》
-《Java语言程序设计-进阶篇（原书第10版）》
-
-* 并发编程
-并发编程网 -- java 并发编程学习指导
-http://ifeve.com/java-concureent/
-Java并发编程的总结与思考
+并发编程网
+     http://ifeve.com/java-concureent/
+百度云盘
+     https://pan.baidu.com/s/1fgg3EvwagSDIbsFTA8RTGw
+《Java 8实战 (图灵程序设计丛书)》
 《Java多线程并发编程核心技术》
 《Java并发编程艺术》
+《Java编程思想(第4版)》
+《Java语言程序设计-进阶篇（原书第10版）》
+《Effective Java》
+《Java程序性能优化》
 
+#### 并发编程
 * 多线程与线程池原理
-一张图让你看懂JAVA线程间的状态转换
-Java并发编程：Thread类的使用
-《图解Java多线程设计模式》
-
 
 * 并发 -- 锁机制
 深入理解java内存模型系列文章
@@ -608,18 +601,18 @@ Java 中的锁
 * 多线程容器
 深入分析ConcurrentHashMap
 
-
+#### Java 容器类与实现原理
+ArrayList 、LinkedList
+HashMap
+LinkedHashMap
+ConcurrentHashMap的锁的实现
 
 #### 反射、动态代理
 Java反射机制原理 -- http://www.importnew.com/23902.html
 https://mp.weixin.qq.com/s/fXEYulgiTNgun0pJswRhXA
 动态代理 -- https://www.cnblogs.com/JackSparrow-/p/10665928.html
 
-#### Java 容器类与实现原理
-ArrayList 、LinkedList
-HashMap
-LinkedHashMap
-ConcurrentHashMap的锁的实现
+
 
 #### JDK 7,8,9,10 版本特性
 《Java 8实战》
@@ -631,7 +624,7 @@ Java 个版本特性与变化
 
 正则表达式
 
-lamda
+lambda
 《精通lambda表达式 Java多核编程》
 
 #### 注解 & APT & AOP 
@@ -650,12 +643,17 @@ http://www.xz577.com/j/33988.html
 #### 加密与解密
 《Java加密与解密的艺术-梁栋》
 
+
 ### 网络协议、操作系统、计算机组成原理
 
 
 #### 计算机组成原理 
 https://time.geekbang.org/column/article/91427
 《计算机组成与设计：软 / 硬件接口》
+
+#### 操纵系统
+《现代操作系统（原书第3版） (计算机科学丛书)》
+
 
 #### 编译原理与汇编语言
 
