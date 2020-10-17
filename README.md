@@ -2,16 +2,13 @@
 ## 发展规划
 5年 - Android高级工程师(架构师) 
 
-
-
-
-## MBP 学习模型 --> 建立知识体系
+## ABP 学习模型 --> 建立知识体系
 
 
 
 ## 学习资源：
     第一重 A -- 知识体系建立
-### 【A】【B】【C】【P】享学Android 高级 VIP课
+### Android 高级 VIP课
 https://ke.qq.com/course/347420?tuin=a9576e30 
 
     第二重 PBC -- 专题强化
