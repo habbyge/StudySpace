@@ -121,7 +121,6 @@ https://blog.mindorks.com/essential-guide-for-designing-your-android-app-archite
 ### 跟优秀开源项目学架构
 https://github.com/JsonChao/Awesome-WanAndroid
 https://zhuanlan.zhihu.com/p/52542420
-WanmeiHelper
 
 ### jetpack
 https://space.bilibili.com/137860026/?share_source=copy_link&share_medium=iphone&bbid=Z34B063E255EE20C49CB9BD365B1C011EEB9&ts=1576543811
@@ -645,13 +644,13 @@ https://www.jianshu.com/p/878e4ddaa51b
   组件化插件化方案
 
 
-#### 【活动SDK 】【WMOTP】JsBridge -- WebView Hybrid方案与原理
+#### JsBridge -- WebView Hybrid方案与原理
 DSBridge-Android
 WebViewJavascriptBridge
 
 ### 打包插件
 【问题排查解决】gradle 打包apk后so 包改变问题
-http://kms.sys.wanmei.net/pages/viewpage.action?pageId=48165577
+
 
 
 ##1 C/C++/NDK/音视频
@@ -833,7 +832,7 @@ Fiddle2 / Charles
  WireShark 查看 TcpDump 抓包结果
 https://mozillazg.com/2015/05/open-tcpdump-result-with-wireshark-gui.html
 
-http://kms.sys.wanmei.net/pages/viewpage.action?pageId=42087916
+
 基于Hugo二次开发的一款方法耗时检测插件，可简单集成、不侵入源码地实现对项目中所有java方法的耗时检测
 
 
