@@ -633,15 +633,10 @@ https://www.cnblogs.com/punkisnotdead/p/4807795.html?utm_source=tuicool&utm_medi
 https://blog.csdn.net/lmj623565791/article/details/49300989
 https://www.jianshu.com/p/878e4ddaa51b
 
-### APP 架构设计与实现方案 -- 173Show 、 173Helper 
+### APP 架构设计与实现方案 
 
-### OneSDK  
+### SDK  
 
-#### 【OneSDK】
-设计思想
-
-#### 【OnePushSDK】
-  组件化插件化方案
 
 
 #### JsBridge -- WebView Hybrid方案与原理
