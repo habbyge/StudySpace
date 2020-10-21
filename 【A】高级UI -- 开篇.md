@@ -10,9 +10,9 @@
 
 ### 输出倒逼输入
 
-- 自定义view的步骤，Android的wrap_content是如何计算的
-
 - 自定义控件有哪几种实现方式？在实现自定义控件时需要重写哪几个构造方法？ 
+
+- 自定义view的步骤，Android的wrap_content是如何计算的
 
 - 定一个宽高相同的ImageView，你怎么做，重写哪些方法 
 
@@ -89,34 +89,6 @@
 - 常用UI组件 -- RecycleView
 
   
-
-### 知识梳理
-
-ViewGroup#onMeasure方法职责：
-
-​	确定自身尺寸
-
-​	测量子View
-
-
-
-ViewGroup#onLayout方法职责：
-
-​	view摆放在什么位置
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

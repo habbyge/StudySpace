@@ -1,18 +1,10 @@
 ## 【A】高级UI -- 自定义View（一）
 
-
-
-对于自定义View的基本要求：
-
-​	· xml中可以设置自定义属性
-
-​	· Java代码中亦可以属性配置
+> 自我管理应该着重于精力的管理，而非时间的安排 。
 
 
 
-
-
-### 自定义View关键步骤
+### 自定义View知识脉络
 
 #### 构造方法
 
@@ -35,7 +27,7 @@
 
 
 
-#### onMeasure、onLayout、onDraw方法
+#### 核心方法 ：onMeasure、onLayout、onDraw
 
 View要实现 onMeasure、onDraw()
 
@@ -61,10 +53,18 @@ getMeasureWidth与getWidth的区别？
 
 
 
+
+
+
+
+### 处理自定义Viewgroup中 item高度设置无效的问题
+
+
+
+
+
+
+
 ### 项目实践 -- 流式布局
 
 setMeasureDimension(realWidth,realHeight)
-
-
-
-### 项目实践 -- 处理自定义Viewgroup中 item高度设置无效的问题
