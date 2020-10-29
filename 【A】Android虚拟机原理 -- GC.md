@@ -1,4 +1,4 @@
-## 【B】Java虚拟机原理 -- GC
+## 【A】Android虚拟机原理 -- GC
 
 
 
