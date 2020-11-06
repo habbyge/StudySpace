@@ -139,6 +139,12 @@ https://blog.csdn.net/baidu_38634017/article/details/88323578
 
 
 
+- HTTP 缓存机制
+
+https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Caching_FAQ
+
+
+
 - HTTP3.0
 
   https://network.51cto.com/art/202009/625999.htm
