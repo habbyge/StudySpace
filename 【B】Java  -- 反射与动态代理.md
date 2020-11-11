@@ -4,14 +4,6 @@
 
 
 
-
-
-### 
-
-![image-20200907192154216](/Users/zhanghongxi/Library/Application Support/typora-user-images/image-20200907192154216.png)
-
-### 
-
 ### 反射 
 
 ​	一般情况下，我们使用某个类时必定知道它是什么类，是用来做什么的，并且能够获得此类的引用。于是我们直接对这个类进行实例化，之后使用这个类对象进行操作。
@@ -24,7 +16,29 @@
 
 
 
-### 反射获取泛型信息 -- Type接口体系
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### 反射获取泛型信息 -- Type接口体系
 
 ​	反射的核心是从通过Class的对象，获取属性、构造方法、成员方法等信息，而Class类则是实现了Type接口：
 
@@ -68,7 +82,6 @@ native层 生成Class对象、Filed对象，并将原始signature签名 赋值�
 
 
 
-`引申：Gson TypeToken保存业务端数据封装类` 
 
 
 
@@ -77,10 +90,7 @@ native层 生成Class对象、Filed对象，并将原始signature签名 赋值�
 
 
 
-
-
-
-### 反射获取注解信息
+#### 反射获取注解信息
 
 
 
@@ -90,7 +100,11 @@ native层 生成Class对象、Filed对象，并将原始signature签名 赋值�
 
 
 
-`小设计：通过自定义注解与反射实现页面跳转的参数注入`
+
+
+> **反射为什么慢 ？ 为什么说反射机制会有性能问题？**
+
+
 
 
 
@@ -124,35 +138,6 @@ native层 生成Class对象、Filed对象，并将原始signature签名 赋值�
 
 
 
-### 引申  -- Retrofit 中泛型、注解、反射与动态代理
-
-Retrofit的使用姿势：
-
-![image-20200907225232558](/Users/zhanghongxi/Library/Application Support/typora-user-images/image-20200907225232558.png)
-
-Retrofit的create方法返回了一个动态代理对象，使得调用者只需关注传入参数，以及响应对象即可，不需要关注网络请求具体实现。来看create方法的内部实现：
-
-先过滤掉Object类中声名的方法以及接口default方法。
-
-![image-20200907234214026](/Users/zhanghongxi/Library/Application Support/typora-user-images/image-20200907234214026.png)
-
-
-
-从缓存池读取ServiceMethod对象或使用ServiceMethod.Builder 创建新的ServiceMethod对象。
-
-![image-20200907234910092](/Users/zhanghongxi/Library/Application Support/typora-user-images/image-20200907234910092.png)
-
-
-
-参数method即业务端在interface里声明的方法，ServiceMethod.Builder 中 ，getAnnotations()方法获取方法注解数组Annotation[]，getParameterAnnotations()获取到参数注解 二维数组 Annotation[][]（一个参数可能有多个注解）。
-
-![image-20200907235400607](/Users/zhanghongxi/Library/Application Support/typora-user-images/image-20200907235400607.png)
-
-
-
-```
-parseParameter方法 - parseParameterAnnotation方法中解析注解，根据注解类型创建 ParameterHandler
-```
 
 
 
@@ -160,15 +145,22 @@ parseParameter方法 - parseParameterAnnotation方法中解析注解，根据注
 
 
 
-### 实践 -- 实现View
-
-![image-20200914180933006](/Users/zhanghongxi/Library/Application Support/typora-user-images/image-20200914180933006.png)
 
 
 
 
 
-### 实践 -- 事件的注入
+
+
+
+
+
+
+
+
+### 实践 
+
+#### 事件的注入
 
 定义注解
 
@@ -297,21 +289,8 @@ static class ListenerInvokeHandler<T> implements InvocationHandler {
         Logger.e("ListenerInvokeHandler this.method = " + this.method.getName());
         return this.method.invoke(target, args);
     }
-}
+
 ```
-
-
-
-
-
-### Interview & Exercise
-
-1. 为什么说反射机制会有性能问题？
-2. 
-
-
-
-
 
 
 
@@ -322,3 +301,7 @@ static class ListenerInvokeHandler<T> implements InvocationHandler {
 ### 资源参考
 
 https://www.jianshu.com/p/f1a8356c615f
+
+动态代理5种实现方式
+
+https://cloud.tencent.com/developer/article/1461796

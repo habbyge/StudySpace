@@ -1,8 +1,8 @@
 ## Java基础进阶 --  注解
 
-![image-20200831173142738](/Users/zhanghongxi/Library/Application Support/typora-user-images/image-20200831173142738.png)
+### 输出
 
-
+- 注解实现一个提示功能：如果int的值大于了3需要提示。
 
 
 
