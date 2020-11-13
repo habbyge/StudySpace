@@ -1,0 +1,8 @@
+<com.zhx.myworkdemo.view.ExpandableLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/floating_message_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+    android:gravity="center_vertical"
+    android:minHeight="25dp"
+    android:orientation="vertical" />

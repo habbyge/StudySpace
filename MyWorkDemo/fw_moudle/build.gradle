@@ -1,0 +1,24 @@
+apply from: "../moudle_config.gradle"
+
+android {
+    defaultConfig {
+
+        if (isRunModule.toBoolean()) {
+            applicationId "com.zhx.a173helper_fw_moudle"
+        }
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+    resourcePrefix "helper_"
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':baselibrary')
+    implementation rootProject.ext.dependencies["androidx-core-kt"]
+    annotationProcessor rootProject.ext.dependencies["arouter-compiler"]
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+}

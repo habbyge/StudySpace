@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <declare-styleable name="MyFlowLayout">
+        <!-- The type of navigation to use. -->
+        <attr name="default_gravity">
+            <!-- Normal static title text -->
+            <enum name="left" value="0" />
+            <!-- The action bar will use a selection list for navigation. -->
+            <enum name="center" value="1" />
+            <!-- The action bar will use a series of horizontal tabs for navigation. -->
+            <enum name="right" value="2" />
+        </attr>
+    </declare-styleable>
+</resources>

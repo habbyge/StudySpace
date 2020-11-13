@@ -1,0 +1,26 @@
+apply from: "../moudle_config.gradle"
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+android {
+
+    defaultConfig {
+        if(isRunModule.toBoolean()){
+            applicationId "com.zhx.otp_fadb_moudle"
+        }
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+    resourcePrefix "otp_"
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation project(':baselibrary')
+    implementation rootProject.ext.dependencies["androidx-core-kt"]
+    kapt rootProject.ext.dependencies["arouter-compiler"]
+    kapt rootProject.ext.dependencies["butterknife-compiler"]
+}
+apply plugin: 'kotlin-android-extensions'
