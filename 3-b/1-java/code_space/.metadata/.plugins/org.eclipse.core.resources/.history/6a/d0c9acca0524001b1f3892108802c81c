@@ -1,0 +1,9 @@
+import kmp.BruteFroce;
+
+public class StringTest {
+
+	public static void main(String[] args) {
+		BruteFroce.bruteForce("**N(P, j) = {t | prefix(prefix(P, j), t) = suffix(prefix(P, j), t), 0¡Ü t ¡´ j } shift = j ", "t)");
+	}
+
+}

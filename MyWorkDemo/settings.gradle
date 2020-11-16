@@ -1,0 +1,7 @@
+include ':algorithm_moudle'
+include ':app'
+include    ':baselibrary'
+//include    ':loginmoudle'
+include ':Javalib'
+// ':173helper_fw_moudle',':otp_fadb_moudle'
+rootProject.name='MyWorkDemo'

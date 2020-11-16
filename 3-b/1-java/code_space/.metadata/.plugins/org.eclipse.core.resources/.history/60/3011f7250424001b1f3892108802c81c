@@ -1,0 +1,13 @@
+package kmp;
+
+/**
+ * KMPÀ„∑®
+ * @author Administrator
+ *
+ */
+public class Kmp {
+	
+	public static void kmp() {
+		
+	}
+}

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+登录界面的布局文件
+注意：
+1.请修改App Logo和APP Name
+2.天翼账号品牌标识必须显示，并且不可修改文字和icon
+3.必须显示登录按钮、服务与隐私协议
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.com.chinatelecom.account.sdk.ui.AuthActivity">
+    <!-- 头部导航栏布局 -->
+    <RelativeLayout
+        android:id="@+id/ct_account_nav_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <ImageView
+            android:id="@+id/ct_account_nav_goback"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:visibility="visible"
+            android:scaleType="center"
+            android:src="@drawable/ct_account_auth_goback_selector"/>
+        <TextView
+            android:id="@+id/ct_account_nav_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:textColor="#FF000000"
+            android:text="免密登录"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#33000000"/>
+    </RelativeLayout>
+
+    <!-- 登录界面Logo（需替换为接入方的APP LOGO）-->
+    <ImageView
+        android:id="@+id/ct_account_app_logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:background="@drawable/ic_launcher"
+        android:layout_marginTop="105dp"
+        />
+
+    <!-- 显示用户的手机脱敏号码，若获取失败，将显示“以本机号码登录”-->
+    <TextView
+        android:id="@+id/ct_account_desensphone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="201dp"
+        android:layout_centerHorizontal="true"
+        android:text="189****9999"
+        android:textColor="#FF000000"
+        android:textSize="20sp"
+        />
+
+    <!-- 天翼账号品牌标识，该控件的logo图标和文本文字不可修改，必须按设计规范显示-->
+    <TextView
+        android:id="@+id/ct_account_brand_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="281dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="11sp"
+        android:textColor="#66000000"
+        android:drawableLeft="@drawable/ct_account_brand_logo"
+        android:text="@string/ct_account_brand_text"
+        />
+
+    <LinearLayout
+        android:id="@+id/ct_account_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="308dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/ct_account_auth_loginbtn_selector"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/ct_account_login_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ct_account_login_loading_icon"
+            android:scaleType="center"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/ct_account_login_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="本机号码一键登录"
+            android:textSize="16sp"
+            android:textColor="#FFFFFFFF"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ct_account_other_login_way"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="376dp"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:text="其他登录方式"
+        android:textSize="14sp"
+        android:textColor="@drawable/ct_account_other_text_selector"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- 必须显示服务与隐私协议 -->
+    <RelativeLayout
+        android:id="@+id/ct_auth_privacy_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <CheckBox
+            android:id="@+id/ct_auth_privacy_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="2dp"
+            android:paddingRight="3dp"
+            android:button="@drawable/ct_account_auth_privacy_checkbox"
+            android:checked="true"/>
+        <!-- 底部隐私协议文本配置说明：
+            1、SDK默认配置：
+                  a、文案的前面部分"登录即同意《天翼账号服务与隐私协议》"不可修改，
+                  b、《天翼账号服务与隐私协议》的色值通过android:tag属性设置，点击事件由SDK处理
+                  c、请将[应用名]替换为您应用的App Name
+                  d、隐私协议内容必须按接入规范设置
+             2、动态配置：
+                  a、支持设置隐私协议文本内容、协议链接文字的颜色及点击事件等
+                  b、隐私协议内容必须按接入规范设置
+          -->
+        <TextView
+        android:id="@+id/ct_auth_privacy_text_dynamic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ct_auth_privacy_checkbox"
+        android:layout_marginLeft="4dp"
+        android:text="登录即同意《天翼账号服务与隐私协议》并授权[应用名]获取本机号码"
+        android:textColor="#FF000000"
+        android:textSize="12sp"/>
+    </RelativeLayout>
+</RelativeLayout>

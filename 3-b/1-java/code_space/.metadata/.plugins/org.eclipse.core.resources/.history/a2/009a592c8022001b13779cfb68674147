@@ -1,0 +1,12 @@
+package kmp;
+/**
+ * ±©¡¶∆•≈‰
+ * @author Administrator
+ *
+ */
+public class BruteFroce {
+	
+	public static void bruteForce(Stirng s,String p) {
+		
+	}
+}

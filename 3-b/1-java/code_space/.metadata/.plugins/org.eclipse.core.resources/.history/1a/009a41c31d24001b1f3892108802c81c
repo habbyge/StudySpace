@@ -1,0 +1,38 @@
+import kmp.BruteFroce;
+import kmp.Kmp;
+
+public class StringTest {
+
+	public static final String s = "**N(P, j) = {t | prefix(prefix(P, j), t) "
+			+ "= suffix(prefix(P, j), t), 0¡Ü t ¡´ j } shift = j (P, j), t) = "
+			+ "suffix(prefix(P, j), t), 0¡Ü t ¡´ j } shift = j (P, j), t)"
+			+ " = suffix(prefix(P, j), t), 0¡Ü t ¡´ j } shift = j (P, j), t)"
+			+ " = suffix(prefix(P, j), t), 0¡Ü t ¡´ j } shift = j (P, j), t) "
+			+ "= suffix(prefix(P, j), t), 0¡Ü t ¡´ j } shift = j (P, j), t) "
+			+ "= suffix(prefix(P, j), t), 0¡Ü t ¡´ j } shift = j (P, j), t)"
+			+ " = suffix(prefix(P, j), t), 0¡Ü t ¡´ j } shift = j (P, j), t)"
+			+ " = suffix(prefix(P, j), t), 0¡Ü t ¡´ j } shift = j (P, j), t)"
+			+ " = suffix(prefix(P, j), t), 0¡Ü t ¡´ j } shift = j (P, j), t)"
+			+ " = suffix(prefix(P, j), t), 0¡Ü t ¡´ j } shift = j (P, j), t) "
+			+ "= suffix(prefix(P, j), t), 0¡Ü t ¡´ j } shift = j (P, j), t) = "
+			+ "suffix(prefix(P, j), t), 0¡Ü t ¡´ j } shift = j (P, j), t) = "
+			+ "suffix(prefix(P, j), t), 0¡Ü t ¡´ j } shift = j (P, j), t) ="
+			+ " suffix(prefix(P, j), t), 0¡Ü t ¡´ j } shift = j (P, j), t) ="
+			+ " suffix(prefix(P, j), t), 0¡Ü t ¡´ j } shift = j (P, j), t) = s"
+			+ "uffix(prefix(P, j), t), 0¡Ü t ¡´ j } shift = j (P, j), t) = su"
+			+ "ffix(prefix((P, j), t) = suffix(prefix(P, j), t), 0¡Ü t ¡´ j } "
+			+ "shift = j (P, j), t) = suffix(prefix(P, j), t), 0¡Ü t ¡´ j } "
+			+ "shift = j (P, j), t) = suffix(prefix(P, j), t), 0¡Ü t ¡´ j } "
+			+ "shift = j (P, j), t) = suffix(prefix(P, j), t), 0¡Ü t ¡´ j }"
+			+ " shift = j (P, j), t) = suffix(prefix(P, j), t), 0¡Ü t ¡´ j }A "
+			+ "shift = j (P, j), t) = suffix(prefix(P, j), t), 0¡Ü t ¡´ j } "
+			+ "shift = j (P, j), t) = suffix(prefix(P, j), t), 0¡Ü t ¡´ j } "
+			+ "shift = j P, j), t), 0¡Ü t ¡´ j } shift = j ";
+	public static final String pattern = "suffix(prefix(P, j), t), 0¡Ü t ¡´ j }A";
+	
+	public static void main(String[] args) {
+		BruteFroce.bruteForce(s,pattern);
+		Kmp.kmp(s, pattern);
+	}
+
+}

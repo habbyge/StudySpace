@@ -1,0 +1,9 @@
+import kmp.BruteFroce;
+
+public class StringTest {
+
+	public static void main(String[] args) {
+		BruteFroce.bruteForce("abcdfrgdssad", "fr");
+	}
+
+}

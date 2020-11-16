@@ -1,0 +1,61 @@
+
+public class CashTest {
+	static int count = 0;
+	
+	public static void main(String[] args) {
+//		cash(100);
+		cash2(100);
+	}
+	
+	public static void cash(int n) {
+		if(n== 0) {
+			System.out.println(" change over , count is "+count);
+			return;
+		}
+		System.out.println(" change : "+n);
+		++count;
+		if(n >= 7) {
+			System.out.println("7 ");
+			cash(n-7);
+		}else if(n >= 3) {
+			System.out.println("3 ");
+			cash(n-3);
+		}else {
+			System.out.println("1 ");
+			cash(n-1);
+		}
+	}
+	
+	public static void cash2(int n) {
+		if(n== 0) {
+			return;
+		}
+		System.out.println(" change : "+n);
+		
+		int left = n;
+		
+		if(left >= 7) {
+			int count_7 = n / 7;
+			System.out.println(" count_7 : "+count_7);
+			count+=count_7;
+			int mod_7 = n % 7;
+			left = mod_7;
+		}
+
+		if(left >= 3) {
+			int count_3 = left / 3;
+			System.out.println(" count_3 : "+count_3);
+			count+=count_3;
+			int mod_3 = left % 3;
+			left = mod_3;
+		}
+	
+		if(left > 0) {
+			int count_1 = left;
+			count+=count_1;
+			System.out.println(" count_1 : "+count_1);
+		}
+	
+		System.out.println(" change over , count is "+count);
+	}
+}
