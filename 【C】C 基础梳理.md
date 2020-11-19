@@ -265,7 +265,11 @@ strcat(dest,source);
 
 
 
+### 参考资源
 
+- DevYK音视频学习（一）-- c语言
+
+  https://juejin.im/post/6844904022827073543#heading-35
 
 
 

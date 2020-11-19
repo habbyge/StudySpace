@@ -12,11 +12,24 @@ https://www.cnblogs.com/attentle/p/12652512.html
 
   
 
-​    CLion中文乱码问题解决：
+> ​    CLion中文乱码问题解决：
+>
 
+```
  打开File - Settings -> File Encodings编码改成UTF-8
 
  编译器右下角改成GBK
+```
+
+
+
+> Mac升级Catalina(10.15)后 clion不能运行，提示「xcrun: error: invalid active developer path ...」
+
+```
+1.是因为升级后少了系统需要的运行库，重新安装Xcode developer tools即可解决该问题。在终端中运行命令行xcode-select --install 后会自动安装Xcode developer tools，安装成功后即可解决该问题。
+
+2.Tools -> CMmake -> reset cache and reload project
+```
 
 
 
@@ -72,7 +85,7 @@ https://www.cnblogs.com/attentle/p/12652512.html
 
 ### ** C++对c语言的扩展**
 
-- namespace作用域
+- #### namespace作用域
 
   ```c++
   namespace mine{}
@@ -80,19 +93,19 @@ https://www.cnblogs.com/attentle/p/12652512.html
 
   控制标识符作用域，c语言只有一个全局作用域
 
-- register 函数检测增强
+- #### register 函数检测增强
 
   for循环中 int i ，c++会自行优化为寄存器变量
 
-- struct类型类型加强
+- #### struct类型类型加强
 
   c语言中认为struct定义了一组变量的集合，而不是一种类型
 
   c++中struct关键字和class关键字功能一样的，但是还是有区别
 
-- c++更强调类型（所有的变量和函数都必须有类型）
+- #### c++更强调类型（所有的变量和函数都必须有类型）
 
-- const 不同表现
+- #### const 不同表现
 
   c语言中const的表现：
 
@@ -133,7 +146,7 @@ https://www.cnblogs.com/attentle/p/12652512.html
 
 
 
--  **引用** 
+-  #### **引用** 
 
   1. 引用概念和用法
 
@@ -211,11 +224,11 @@ void printfT(Teacher pT)
 
 
 
-- 新增bool类型
+- #### 新增bool类型
 
   占用 1个字节，值为0或1
 
-- 三目运算符 
+- #### 三目运算符 
 
   ![image-20200822201241699](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200822201241699.png)
 
@@ -227,9 +240,9 @@ void printfT(Teacher pT)
 
   ​	*(a < b ? &a : &b) = 30;
 
-- 内联函数
+- #### 内联函数
 
-- 函数
+- #### 函数
 
   ​	默认参数
 
@@ -239,7 +252,7 @@ void printfT(Teacher pT)
 
   ​	函数重载
 
-- new、delete
+- #### new、delete
 
 
 
