@@ -4,25 +4,39 @@
 
 #### 数据类型
 
+| 类型     | 说明                             |
+| -------- | -------------------------------- |
+| 基本类型 | 整型、浮点型                     |
+| 构造类型 | 指针、数组、结构体、共同体、枚举 |
+
+| 类型           | 32位 | 64位 | 取值范围          |
+| -------------- | ---- | ---- | ----------------- |
+| char           | 1    | 1    | -128～127或0～255 |
+| Short          | 2    | 2    |                   |
+| int            | 4    | 4    |                   |
+| Long           | 4    | 8    |                   |
+| unsigned char  |      |      |                   |
+| unsigned short |      |      |                   |
+| unsigned int   |      |      | 0～65535          |
+| unsigned long  |      |      |                   |
+
 1字节 = 8位二进制
 
 带符号基本数据类型，首位表示正负，0正1负，所以正极大加1，进位，变成负数极小值
 
 
 
-基本类型：字符、整型、浮点型
+| 格式控制符   | 说明                                                         |
+| ------------ | ------------------------------------------------------------ |
+| %c           | 读取一个单一的字符                                           |
+| %hd、%d、%ld | 读取一个十进制数，并分别赋值给short、int、long类型           |
+| %ho、%o、%lo | 读取一个八进制数，并分别赋值给short、int、long类型           |
+| %hx、%x、%lx | 读取一个十六进制数，并分别赋值给short、int、long类型         |
+| %hu、%u、%lu | 读取一个无符号整数，并分别赋值给unsigned short、unsigned int、unsigned long类型 |
+| %f、%lf      | 读取一个十进制小数，并分别赋值给float、double类型            |
+| %s           | 读取一个字符串                                               |
 
-构造类型：数组、结构体、共同体、枚举
 
-指针
-
-![image-20200917193127118](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200917193127118.png)
-
-![image-20200917193251649](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200917193251649.png)
-
-
-
-论证：
 
 ```c
 char c  = 128;// 2^7
@@ -34,22 +48,25 @@ printf("%hu\n",c);//无符号短整型 输出65408
 
 
 
-### 常用的预处理器
+#### 变量与常量
+
+##### 声明变量
+
+1. 声明同时定义变量。声明变量时即建立存储空间 
+2. 声明而不定义。extern关键字。
+
+
+
+##### 定义常量
+
+1. #define 宏预处理器
 
 宏就是文本替换
-
-![image-20200917201357510](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20200917201357510.png)
-
-
 
 ```c
 #define A '1
 #define test(i) i >10?1:0
 ```
-
-
-
-#### 宏函数
 
 优点：
 
@@ -59,15 +76,195 @@ printf("%hu\n",c);//无符号短整型 输出65408
 
 
 
-### 指针
-
-#### 指针与指针数组
+2. const关键字
 
 
 
+#### 存储类
+
+- auto
+
+- register
+
+  定义寄存器变量，只用于需要快速访问的变量，比如计数器。
+
+- static
+
+  程序的生命周期内，声明它的文件内的全局变量，不需要在它每次进出作用域时进行创建和销毁。
+
+- extern
+
+  该存储类用于提供一个全局变量的引用，全局变量对于所有的程序文件都是可见的。当您使用一个extern时，对于无法初始化的变量，会把变量名指向一个之前定义过的存储位置。
 
 
-#### 函数指针
+
+
+
+#### 枚举
+
+1. 先定义枚举类型再定义枚举变量
+
+   ```c
+      enum DAY {
+           MON = 1, TUE, WEB, THU, FRI, SAT, SUN
+       };
+   
+       enum DAY day;
+   ```
+
+2. 定义枚举类型的同时定义枚举变量
+
+   ```c
+   enum DAY {
+       MON = 1, TUE, WEB, THU, FRI, SAT, SUN
+   } day;
+   ```
+
+   
+
+3. 省略枚举名称，直接定义枚举变量
+
+   ```c
+   enum {
+       MON = 1, TUE, WEB, THU, FRI, SAT, SUN
+   } day;
+   ```
+
+
+
+
+
+#### 指针
+
+##### 指针的算术运算
+
+int* ptr++ 指针将向后移动4字节，指向下一个整数int的位置。
+
+```c
+const int MAX = 3;
+
+int main() {
+
+    int var[] = {10,100,200};
+    int i , *ptr;
+    //指针指向数组首元素地址
+    ptr = var;
+    for (i = 0; i < MAX; i++) {
+        printf("存储地址：var[%d] = %p \n",i,ptr);
+        printf("存储值：var[%d] = %d \n",i,*ptr);
+        ptr ++;
+    }
+    return 0;
+}
+
+运行结果：
+存储地址：var[0] = 0x7ffee29b1a0c 
+存储值：var[0] = 10 
+存储地址：var[1] = 0x7ffee29b1a10 
+存储值：var[1] = 100 
+存储地址：var[2] = 0x7ffee29b1a14 
+存储值：var[2] = 200 
+```
+
+
+
+##### 指针数组
+
+指针类型的数组，每个元素都是指向相应类型变量的指针。
+
+```c
+#include<stdio.h>
+
+const int MAX = 3;
+
+int main() {
+
+    int var[] = {10, 100, 200};
+
+    int j, *p[MAX];
+    //将数组中int变量地址赋给指针数组中的指针变量
+    for (j = 0; j < MAX; j++) {
+        p[j] = &var[j];
+    }
+
+    for (j = 0; j < MAX; j++) {
+        printf("存储地址：var[%d] = %p \n", j, p[j]);
+        printf("存储值：var[%d] = %d \n", j, *p[j]);
+    }
+    return 0;
+}
+```
+
+
+
+##### 指向指针的指针
+
+通常指针保存的是一个变量的内存地址，这个变量如果也是一个指针，那么指向指针的指针行成一种多级间接寻址的形式。
+
+
+
+
+
+##### 传递指针给函数
+
+```c
+#include<stdio.h>
+#include<time.h>
+
+void getSeconds(unsigned long *par);
+
+int main() {
+
+    unsigned long sec;
+
+    getSeconds(&sec);
+
+    printf("Now time : %ld", sec);
+    return 0;
+}
+
+void getSeconds(unsigned long *par) {
+    /* 获取当前时间*/
+    *par = time(NULL);
+    return;
+}
+```
+
+
+
+##### 从函数返回指针
+
+```c
+#include<stdio.h>
+#include<time.h>
+#include <stdlib.h>
+
+/*生成并返回随机数的函数*/
+int *getRandom() {
+    static int r[10];
+    /*设置种子*/
+    srand((unsigned) time(NULL));
+    for (int j = 0; j < 10; ++j) {
+        r[j] = rand();
+        printf("%d\n", r[j]);
+    }
+    return r;
+}
+
+int main() {
+    /*定义一个指向整数的指针*/
+    int *pInt;
+    pInt = getRandom();
+    for (int i = 0; i < 10; ++i) {
+        printf("*p+[%d] : %d", i, *(pInt + i));
+    }
+    return 0;
+}
+```
+
+
+
+##### 函数指针与回调函数
 
 ```c
 void println(char *buffer){
@@ -117,7 +314,7 @@ void test(callback callback){
 
 
 
-#### 指针动态分配内存
+##### 指针动态分配内存
 
 - malloc
 
@@ -160,7 +357,7 @@ void test(callback callback){
 
 
 
-### c语言中的字符串 -- 字符数组
+#### c字符串 -- 字符数组
 
 ​	c风格的字符串 == c字符串 == 字符数组 ， 以'\0' 结尾
 
@@ -178,7 +375,7 @@ char * str3 = "hello";
 
 
 
-#### c字符串常用函数：
+##### c字符串常用函数：
 
 - scanf函数接收字符串输入的问题：
 
